@@ -1,0 +1,70 @@
+
+#drasi-home-tilt-image-unit {
+	.content--c2 {
+		// border: 3px dotted red;
+		position: relative;
+		margin-top: -250px;
+
+		.tilter.tilter--2 {
+			@media ( max-width: 460px ) {
+				display: none;
+			}				
+		}
+		#cupo-img-mobile {
+			@media ( min-width: 461px ) {
+				display: none;
+			}
+			@media ( max-width: 340px ) {
+				margin-top: 5rem;
+				img {
+					padding-top: 5rem;
+
+				}
+			}
+		}
+
+		.box-content {
+			border-radius: 50px;
+			
+			background: url(/wp-content/uploads/2018/01/cyber-city-1200-matrix-CLEAN.jpg) no-repeat;
+			background-size: cover;
+			position: absolute;
+			width: 50%;
+			min-height: 350px;
+			background-color: rgba( white, 1 );
+			opacity: 1;
+			margin-top: -250px;
+			z-index: 100;
+			box-shadow: 3px 3px 15px gray;
+		
+			.text-content {
+				padding: 10rem;
+
+				@media (max-width: 450px) {
+					padding: 3rem;
+				}
+		
+				.headline {
+					color: $imb-secondary;
+					text-shadow: 2px 2px 6px gray;
+					font-style: italic;
+				}
+				p {
+					color: darken( gray, 20% );
+					font-size: 2rem;
+					text-shadow: 4px 4px 8px white;
+					// border: 1rem dotted red;
+				}
+		
+			}
+
+			@media ( max-width: 1105px ) {
+				position: relative;
+				margin-top: 50px;
+				margin-left: 0;
+				width: 100%;
+			}
+		}		
+
+	}
+}

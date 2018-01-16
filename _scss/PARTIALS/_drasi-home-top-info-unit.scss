@@ -1,0 +1,117 @@
+/**
+ *
+ * HOME PAGE TOP HERO UNIT
+ * This involves the header area. Call-out section.
+ */
+
+#drasi-home-top-info-unit {
+	min-height: 600px;
+	// background: darken( $imb-third, 2.5% );
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#887e80+0,82787a+0,ffffff+100 */
+background: #887e80; /* Old browsers */
+background: -moz-linear-gradient(top, #887e80 0%, #82787a 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #887e80 0%,#82787a 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #887e80 0%,#82787a 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#887e80', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+	@media ( max-width: 460px ) {
+		padding: 0;
+		margin: 0;
+	}
+
+
+	.content {
+		// background: url('/wp-content/uploads/2017/10/the-gray-blob-bg-600w.png');
+		min-height: 800px;
+		// background: url(/wp-content/uploads/2017/10/the-gray-blob-600w.png) no-repeat center center; 
+		background: url(/wp-content/uploads/2018/01/the-orangered-blob.png) no-repeat center center; 
+		// background: url(/wp-content/uploads/2018/01/the-gray-blob-600w-MATRIX.png) no-repeat center center; 
+		  -webkit-background-size: 100%;
+		  -moz-background-size: 100%;
+		  -o-background-size: 100%;
+		  background-size: 100%;	
+
+
+		.text-only {
+			padding-top: 8rem;
+			padding-left: 20rem;
+			padding-right: 15rem;
+
+			.headline {
+				color: lighten($snow, 0%);
+				font-size: 4.5rem;
+				text-shadow: 2px 2px 6px darken(gray, 40%);
+			}
+			p {
+				font-size: 2.5rem;
+				line-height: 3rem;
+				text-shadow: 2px 2px 6px black;
+			}
+		}
+
+		// @media ( max-width: 1105px ) {
+		@media ( max-width: 1200px ) {
+
+			.text-only {
+				padding-top: 10rem;
+				padding-left: 10rem;
+				padding-right: 10rem;
+
+				.headline {
+					color: $snow;
+					font-size: 4rem;
+				}
+				p {
+					font-size: 2rem;
+					line-height: 2.5rem;
+				}
+			}			
+
+		}
+		@media ( max-width: 699px ) {
+
+			.text-only {
+				padding-top: 8rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+
+				.headline {
+					color: $snow;
+					font-size: 4rem;
+				}
+				p {
+					font-size: 2rem;
+					line-height: 2.5rem;
+				}
+			}			
+
+		}	
+		@media ( max-width: 460px ) {
+
+			background: $imb-secondary;
+			margin-top: 2rem;
+			border-radius: 50px;
+
+			.text-only {
+				padding-top: 0rem;
+				padding-left: 2rem;
+				padding-right: 2rem;
+
+				.headline {
+					color: $snow;
+					font-size: 4rem;
+				}
+				p {
+					font-size: 2rem;
+					line-height: 2rem;
+					text-shadow: 2px 2px 6px black;
+					min-height: 550px;
+				}
+			}
+
+		}	
+
+	}
+}

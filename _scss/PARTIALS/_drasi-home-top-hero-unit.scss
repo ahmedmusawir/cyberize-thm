@@ -1,0 +1,60 @@
+/**
+ *
+ * HOME PAGE TOP HERO UNIT
+ * This involves the header area. Call-out section.
+ */
+ 
+#drasi-home-top-hero-unit {
+	main {
+		position: relative;
+
+		.home-hero-mobile-bg {
+			// border: 3px solid white;
+
+			@media (max-width: 499px) {
+				margin-top: 90px;
+			}
+		}
+
+
+		#TOP-HERO-INFO-BOX {
+			position: absolute;
+			z-index: 100;
+			top: 55%;
+			width: 100%;
+			min-height: 400px;			
+
+			@media (max-width: 991px) {
+				top: 35%;
+			}
+			@media (max-width: 499px) {
+				top: 10%;
+			}
+
+			.headline {
+				color: white;
+				text-shadow: 3px 3px 8px black;
+
+				@media (max-width: 650px) {
+					padding-left: 2rem;
+					padding-right: 2rem;
+					font-size: 2.5rem;
+				}
+			}
+			.btn-holder {
+				@media (max-width: 450px) {
+					padding-top: 0;
+				}
+			}
+			.btn {
+				padding: 1.5rem 6rem;
+				border-radius: 50px;
+
+				@media (max-width: 450px) {
+					padding: .5rem 5rem;
+				}
+			}
+
+		}
+	}
+}

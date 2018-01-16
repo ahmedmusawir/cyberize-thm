@@ -1,0 +1,504 @@
+$imb-primary: #f5f5f5; //whitesmoke
+$imb-secondary: #ef4409; //orangered
+$imb-third: #434141; //darkslategray
+// $imb-primary: #580000;
+// $imb-secondary: #a70000;
+// $imb-third: gray;
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222;
+$gray-dark:              lighten($gray-base, 20%);   // #333;
+$gray:                   lighten($gray-base, 33.5%); // #555;
+$gray-light:             lighten($gray-base, 46.7%); // #777;
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee;
+
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+// @import "bourbon/bourbon";
+// @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+// @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+.featherlight-content {
+	background: $imb-third !important;
+
+	.featherlight-close-icon {
+		font-size: 3rem;
+	}
+}
+
+
+// THE SINGLE PORTFOLIO POP UP
+
+.portfolio-single-popup {
+
+	.left-content {
+		#header {
+			background: $imb-secondary;
+			padding: 2rem;
+
+			.title {
+				color: white;
+				padding: 0;
+			}
+			.subtitle {
+				color: lighten(gray, 30%);
+				padding: 0;
+				font-style: italic;
+				font-weight: 300;
+			}
+		}
+
+		main {
+			figure {
+				padding-top: 3rem;
+				padding-bottom: 3rem;
+			}
+		}
+	}
+	.right-content {
+		// background: #e3e3e3;
+		background: white;
+		padding: 3rem;
+
+		.content {
+
+			h5 {
+				color: white;
+				font-weight: 700;
+				padding: 1rem;
+				background: $imb-secondary;
+			}
+			p {
+				font-size: 1.4rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+
+}
+
+.col-md-moose {
+
+	width: 100%;
+
+	#grid-filter {
+
+		margin-top: 8rem;
+
+		.btn {
+			padding: 1rem 3rem;
+			box-shadow: 2px 2px 20px lighten( gray, 15% );
+			font-variant: small-caps;
+			font-size: 1.5rem;
+			font-weight: 700;
+			border-radius: 50px;
+			margin-bottom: 1rem;
+		}
+		.active {
+			background-color: lighten( $imb-secondary, 0% );
+			color: white;
+			font-variant: small-caps;
+		}
+	}
+}
+
+
+#portfolio-masonry-grid {
+
+	margin: 0 auto;
+	margin-bottom: 5rem;
+
+
+	.grid-item {
+
+		width: 25%;
+
+		-webkit-box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+		-moz-box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+		box-shadow: 9px 13px 26px 1px rgba(46,44,46, 0.5);
+
+		transition: background-color 0.5s ease;
+
+		i { 
+			font-size: 8rem;
+			display: none;
+		}
+
+		&:hover {
+			-webkit-box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+
+			-moz-box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+
+			box-shadow: 3px 3px 6px 1px rgba(46,44,46, 0.1) inset;
+
+			background-color: $imb-secondary;
+
+
+			.hover-cover {
+				
+				position: relative;
+
+				.the-cover {
+					width: 100%;
+					height: 100%;
+					display: block;					
+					z-index: 99;
+				}
+
+				i {
+					display: block;
+					position: absolute;
+					top: 30%;
+					left: 35%;
+					opacity: 1;
+					color: $imb-secondary;
+					z-index: 100;
+				}
+			}
+		}
+
+		.headline {
+			margin-top: -5rem;
+			margin-bottom: -2rem;
+			font-size: 1.5rem;
+			color: $snow;
+			text-shadow: 4px 4px 8px black;
+		}
+
+	}
+
+
+	.grid-sizer {
+
+		width: 5%;
+
+	}
+
+
+	.grid-item img {
+
+		width: 100%;
+
+		padding: 1em;
+
+	}	
+
+}
+
+#pagination {
+	margin-bottom: 5rem;
+
+	.paging-first-page {
+		background-color: $imb-secondary;
+		box-shadow: 1rem 1rem 3rem $steel;
+		padding: 1.5rem 4rem;
+
+		a {
+			color: $snow;	
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	.paging-text {
+		background-color: $imb-secondary;
+		box-shadow: 1rem 1rem 3rem $steel;
+		padding: 3.5rem 4rem;
+
+		aside {
+			margin-top: -2rem;
+		}
+		a {
+			color: $snow;
+			font-size: 1.5rem;
+		}
+	}
+}
+
+
+
+
+.content-block {
+
+	padding-bottom: 2rem;
+
+	padding-right: 1rem;
+
+
+	.btn {
+
+		border-radius: 0;
+
+		margin-top: 1rem;
+
+	}
+
+
+	p {
+
+		padding-left: 1rem;
+
+		padding-bottom: 1rem;
+
+		padding-top: 1em;
+
+	}
+
+
+}
+
+
+// ==============================================
+
+// SCSS FOR THE MEDIA QUERY
+
+// ==============================================
+
+
+$main-background-color: gray;
+
+$main-font-color: white;
+
+$rgba-percent: 0.9;
+
+$main-nav-color: rgba(55, 55, 55, $rgba-percent);
+
+
+@media screen and (max-width: 1200px) {
+
+  /* 10 columns for larger screens */
+
+
+
+    #portfolio-masonry-grid {
+
+	    .grid-sizer { width: 5%; }
+
+	    .grid-item {
+
+	  		width: 25%;
+
+	    }
+
+	}
+
+	.col-md-moose {
+
+		width: 100%
+
+	}
+
+
+	.sidebar-fixed {
+
+		float: none;
+
+		width: 100%;
+
+		margin-left: 1em;
+
+	}
+
+	.widget-sidebar {
+
+		width: 30%;
+
+		float: left;
+
+		margin-right: 2em;
+
+		// margin: 0 auto;
+
+		// padding-right: 1.5em;
+
+	}
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    #portfolio-masonry-grid {
+
+		margin-left: 4.5rem;
+
+	    .grid-sizer { width: 8%; }
+
+	    .grid-item {
+
+	  		width: 32%;
+
+	    }	
+
+    }
+
+    .col-md-moose {
+
+	width: 100%
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #portfolio-masonry-grid {
+
+	    .grid-sizer { width: 8%; }
+
+	    .grid-item {
+
+	  		width: 32%;
+
+	    }
+
+	}
+
+	.col-md-moose {
+
+		width: 100%
+
+	}
+
+
+	.sidebar-fixed {
+
+		float: none;
+
+		width: 100%;
+
+		margin: 0 auto;
+
+	}
+
+	.widget-sidebar {
+
+		width: 100%;
+
+		float: left;
+
+		background-color: rgba(0,0,0,.2%);
+
+		// margin: 0 auto;
+
+		// margin-right: 1.5em;
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  /* 10 columns for larger screens */
+
+    #portfolio-masonry-grid {
+
+		margin: 0 auto;
+
+	    .grid-sizer { width: 5%; }
+
+	    .grid-item {
+
+	  		width: 50%;
+
+	    }	
+
+	}
+
+	.col-md-moose {
+
+		width: 100%
+
+	}
+
+
+	.sidebar-fixed {
+
+		float: none;
+
+		width: 100%;
+
+		margin: 0 auto;
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  /* 10 columns for larger screens */
+
+    // .grid-sizer { width: 5%; }
+
+
+    #portfolio-masonry-grid {
+
+		margin: 0 auto;
+
+	    .grid-item {
+
+	  		width: 100%;
+
+	    }
+
+
+	}
+
+	.col-md-moose {
+
+		width: 100%
+
+	}
+
+
+	.sidebar-fixed {
+
+		float: none;
+
+		width: 100%;
+
+		margin: 0 auto;
+
+	}
+
+	.widget-sidebar {
+
+		width: 100%;
+
+		float: left;
+
+		background-color: rgba(0,0,0,.2%);
+
+
+	}
+
+
+}
+
