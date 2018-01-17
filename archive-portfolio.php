@@ -1,7 +1,6 @@
 <?php
 /**
  * The template for displaying all pages.
- * Template Name: Gallery Template
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site may use a
@@ -95,22 +94,28 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 
 						        <article class="content-block clearfix">
 						           
-									<a href="#" data-featherlight="#portfolio-single-<?php echo $item_count; ?>" class="">
+									<a class="" href="#" data-featherlight="#portfolio-single-<?php echo $item_count; ?>">
 
 						    			<i class="fa fa-eye" aria-hidden="true"></i>
 
-										<?php the_post_thumbnail('medium', array('class' => 'img-responsive animated zoomIn')); ?>
+										<?php the_post_thumbnail('medium', array('class' => 'img-responsive')); ?>
 									</a>
+
+
 									
-									<!-- <h3 class="headline"><?php the_title(); ?></h3>	 -->
+										<!-- <h3 class="headline"><?php the_title(); ?></h3>	 -->
 									
-									<!-- <p class="text-only"> -->
+										<!-- <p class="text-only"> -->
 										<?php //the_content(); ?>
 
-										<div class="social-icons">
-											<?php echo do_shortcode('[addtoany]'); ?>
+										<div class="social-icons text-center">
+											<?php //echo do_shortcode('[addtoany]'); ?>
+											<a class="btn btn-primary btn-sm" href="#" data-featherlight="#portfolio-single-<?php echo $item_count; ?>" style="border: 3px solid white; border-radius: 50px;">
+												Click To View
+											</a>
 										</div>													
-									<!-- </p> -->
+										<!-- </p> -->
+
 
 <!-- PORTFOLIO SINGLE DESCRIPTION POP UP BOX -->
 

@@ -1,0 +1,98 @@
+<?php 
+
+/*======================================
+=            ADD ADMIN LOGO            =
+======================================*/
+
+function cyberize_admin_logo() {
+
+	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="padding-top: 2rem;" src="/wp-content/uploads/2018/01/cyberize-group-logo-clear-373x60.png" alt=""></a>';
+
+}
+
+add_action( 'admin_notices', 'cyberize_admin_logo' );
+
+/*=====  End of ADD ADMIN LOGO  ======*/
+
+/*=============================================
+=            ADD ADMIN FOOTER TEXT            =
+=============================================*/
+
+function cyberize_admin_footer_text() {
+
+	echo 'This is how <a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE">Cyberize Group</a> is saving humanity!';
+}
+
+add_filter( 'admin_footer_text', 'cyberize_admin_footer_text' );
+
+/*=====  End of ADD ADMIN FOOTER TEXT  ======*/
+
+function my_footer_shh() {
+    // remove_filter( 'update_footer', 'core_update_footer' ); 
+    add_filter( 'update_footer', 'my_footer_call_back' );
+}
+
+add_action( 'admin_menu', 'my_footer_shh' );
+
+function my_footer_call_back() {
+	echo 'Based on the Moose Framework! &copy; 2018';
+}
+
+
+/*==============================================
+=            REMOVING ADMIN WIDGETS            =
+==============================================*/
+
+function remove_dashboard_meta() {
+        remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+        remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+        remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+        // remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
+        remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+        remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+        remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+        // remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+        remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');//since 3.8 
+        remove_meta_box( 'rg_forms_dashboard', 'dashboard', 'normal');
+
+}
+add_action( 'admin_init', 'remove_dashboard_meta' );
+
+/*=====  End of REMOVING ADMIN WIDGETS  ======*/
+
+/*===========================================
+=            ADMIN WIDGETS SETUP            =
+===========================================*/
+
+// Create the function to use in the action hook
+function cyberize_setup_dashboard_widget() {
+
+	//REMOVING WELCOME PANEL
+	remove_action('welcome_panel', 'wp_welcome_panel');
+
+	//ADDING WIDGET 1
+	add_meta_box( 'cyberize-widget-1', 'CYBERIZE WIDGET 1', 'cyberize_widget_content_1', 'dashboard', 'side', 'high' );
+	add_meta_box( 'cyberize-widget-2', 'CYBERIZE WIDGET 2', 'cyberize_widget_content_2', 'dashboard', 'normal', 'low' );
+	add_meta_box( 'cyberize-widget-3', 'CYBERIZE WIDGET 3', 'cyberize_widget_content_3', 'dashboard', 'side', 'default' );
+
+} 
+ 
+// Hook into the 'wp_dashboard_setup' action to register our function
+add_action('wp_dashboard_setup', 'cyberize_setup_dashboard_widget' );
+
+function cyberize_widget_content_1() {
+
+	echo 'Moose is Loose ...';
+	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="width: 100%;" src="/wp-content/uploads/2018/01/cyberize-banner-800x600.jpg" alt=""></a>';
+}
+function cyberize_widget_content_2() {
+	
+	echo 'Moose is Loose ...';
+	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="width: 100%;" src="/wp-content/uploads/2018/01/cyberize-banner-800x600.jpg" alt=""></a>';
+}
+function cyberize_widget_content_3() {
+	
+	echo 'Moose is Loose ...';
+	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="width: 100%;" src="/wp-content/uploads/2018/01/cyberize-banner-800x600.jpg" alt=""></a>';
+}
+/*=====  End of ADMIN WIDGETS SETUP  ======*/
