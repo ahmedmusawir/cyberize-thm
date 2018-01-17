@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Wandervale
+ * @package MooseFramework
  */
 wp_footer();
 ?>
@@ -68,16 +68,6 @@ wp_footer();
 				
 				</article>
 
-
-
-				<!-- <div id="copyright" class="copyright col-sm-12 col-md-12 col-lg-12">
-					<h4>COPYRIGHT INSPIREBLISSFULBEGINNINGS.COM</h4>
-					<ul>
-						<li><a href="http://tianagustafson.com/privacy-policy/">PRIVACY POLICY</a> | </li>
-						<li><a href="http://tianagustafson.com/terms-of-service/">TERMS</a> | </li>
-						<li><a href="http://tianagustafson.com/earnings-disclaimer/">DISCLAIMER</a> </li>
-					</ul>
-				</div> -->
 				<!--==============================================================================
 				=            THIS IS FOR DEBUGGING. PLZ DISABLE WHEN READY TO PUBLISH            =
 				===============================================================================-->
@@ -92,12 +82,6 @@ wp_footer();
 
 	</div> <!-- End of id="content" class="site-content" -->
 </div> <!-- End of id="page" class="site" -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js" type="text/javascript"></script> 
-<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/jquery.slimscroll.min.js"></script>
-<script src="<?php bloginfo('template_url'); ?>/js/app-vue-news.js"></script>
-
- -->
 
 </body>
 </html>

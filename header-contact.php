@@ -29,36 +29,6 @@
 <?php wp_head(); ?>
 </head>
 
- <!-- 	<style type="text/css" media="screen">
-
-		#masthead {
-	 		height: 83px;	
-				
-				<?php if( get_field( 'page_header_image', 643 ) ) : ?>
-
-				 background-image: url("<?php the_field( 'page_header_image', 643 ); ?>");  
-				<?php else : ?>	
-	
-				 background-image: url("https://drive.google.com/uc?id=1ZVIetMOpuqq--lC2H2OUwLZ2UCMzHEHz");   
-
-
-				<?php endif; ?> 
-
-			background-size: cover;
-			background-position: top center;
-
-		}
-
-		@media ( max-width: 800px ) {
-			#masthead {
-			
-				background-size: cover;
-				background-position: top center;
-			}
-		}		
-
-	</style>		 --> 
-
 <?php $page_header_image = get_field( 'page_header_image' ); ?>
 <?php
     $siteLogo = get_field( 'site_logo_image', 5 ); // 1476 is post id                               

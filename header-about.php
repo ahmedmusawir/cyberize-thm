@@ -19,23 +19,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
-<!--============================================
-=            Google Analytics Code            =
-=============================================-->
-
-
-<!--============================================
-=            Tiana Facebook Ad Code            =
-=============================================-->
-
-<!-- Facebook Pixel Code -->
-
-<!-- End Facebook Pixel Code -->
-
-<!--====  End of Tiana Facebook Ad Code  ====-->
-
-
-
 <?php wp_head(); ?>
 </head>
 
@@ -89,7 +72,7 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="/wp-content/uploads/2017/06/JenniferBrownLogo-450x144.png"></a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="/wp-content/uploads/2018/01/cyberize-group-logo-clear-373x60.png"></a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->

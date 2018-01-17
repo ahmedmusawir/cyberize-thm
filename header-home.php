@@ -81,9 +81,7 @@
 <?php
     $hero_desktop_bg_image = get_field('hero_background_image_desktop'); // 1476 is post id                               
     $hero_mobile_bg_image = get_field('hero_background_image_mobile'); // 1476 is post id                               
-    // $blog_header_image = get_field('page_header_image', 324); // 1476 is post id                               
     $siteLogo = get_field( 'site_logo_image', 5 ); // 1476 is post id                               
-    // $size = 'full'; // (thumbnail, medium, large, full or custom size)
 ?>	
 
 <body <?php body_class(); ?>>
@@ -111,10 +109,8 @@
     
     <main>
         <img class="home-hero-mobile-bg img-responsive visible-xs visible-sm" src="<?php echo $hero_mobile_bg_image; ?>" alt="">
-        <!-- <img class="home-hero-mobile-bg img-responsive visible-xs visible-sm" src="/wp-content/uploads/2018/01/home-hero-mobile-1600x800.jpg" alt=""> -->
         <!-- Initial markup -->
         <div class="segmenter hidden-xs hidden-sm" style="background-image: url(<?php echo $hero_desktop_bg_image; ?>)"></div>
-        <!-- <div class="segmenter hidden-xs hidden-sm" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/2.jpg)"></div> -->
         <h2 class="trigger-headline trigger-headline--hidden hidden-xs hidden-sm">
         <span>C</span><span>Y</span><span>B</span><span>E</span><span>R</span><span>I</span><span>Z</span><span>E</span>
         <span>

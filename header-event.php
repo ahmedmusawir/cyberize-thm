@@ -27,6 +27,10 @@
 <?php wp_head(); ?>
 </head>
 
+<?php $page_header_image = get_field( 'page_header_image' ); ?>
+<?php
+    $siteLogo = get_field( 'site_logo_image', 5 ); // 1476 is post id                               
+?>	
 	<style type="text/css" media="screen">
 
 		#masthead {
@@ -34,7 +38,7 @@
 				
 				<?php if( get_field( 'page_header_image', 1164 ) ) : ?>
 
-				 background-image: url("<?php the_field( 'page_header_image', 1164 ); ?>");  
+				 background-image: url("<?php the_field( 'page_header_image' ); ?>");  
 				 /* background-image: url("<?php the_field( 'blog_index_header_image', get_option('page_for_posts') ); ?>");   */
 				<?php else : ?>	
 	
@@ -84,7 +88,9 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="/wp-content/uploads/2017/06/JenniferBrownLogo-450x144.png"></a>
+
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img id="logo" src="<?php echo $siteLogo; ?>"></a>
+
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->

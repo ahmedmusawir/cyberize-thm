@@ -52,7 +52,6 @@
 			#masthead {
 			
 				/* background-image: url("https://drive.google.com/uc?id=0B0uxrfVW1N50WV9IUHg3SXBmR2M"); */
-				/* background-image: url("/wp-content/uploads/2017/07/JEN2-Hero-Img-1920x800.jpg"); */
 				background-size: cover;
 				background-position: top center;
 			}
