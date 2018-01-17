@@ -27,14 +27,14 @@ add_filter( 'admin_footer_text', 'cyberize_admin_footer_text' );
 
 /*=====  End of ADD ADMIN FOOTER TEXT  ======*/
 
-function my_footer_shh() {
+function cyberize_footer_version_replace() {
     // remove_filter( 'update_footer', 'core_update_footer' ); 
-    add_filter( 'update_footer', 'my_footer_call_back' );
+    add_filter( 'update_footer', 'cyberize_footer_call_back' );
 }
 
-add_action( 'admin_menu', 'my_footer_shh' );
+add_action( 'admin_menu', 'cyberize_footer_version_replace' );
 
-function my_footer_call_back() {
+function cyberize_footer_call_back() {
 	echo 'Based on the Moose Framework! &copy; 2018';
 }
 
@@ -96,3 +96,91 @@ function cyberize_widget_content_3() {
 	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="width: 100%;" src="/wp-content/uploads/2018/01/cyberize-banner-800x600.jpg" alt=""></a>';
 }
 /*=====  End of ADMIN WIDGETS SETUP  ======*/
+
+/*====================================
+=            ADD HELP TAB            =
+====================================*/
+
+function cyberize_add_help_tab() {
+
+	$screen = get_current_screen();
+	$screen->add_help_tab( array(
+			'id' => 'cyberize_admin_help_tab',
+			'title' => 'Help with your site',
+			'callback' => 'cyberize_admin_help_callback'
+		)
+	);
+}
+
+add_action( 'load-post.php', 'cyberize_add_help_tab' ); //old posts
+add_action( 'load-post-new.php', 'cyberize_add_help_tab' ); //new posts
+
+//callback
+function cyberize_admin_help_callback() {
+
+	echo '<h3>This is the Help Headline</h3>';
+	echo '<p> 
+			Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+		</p>';
+	echo '<a href="https://cyberizegroup.com" target="_blank"  title="Go To CYBERIZE"><img style="width: 50%;" src="/wp-content/uploads/2018/01/cyberize-banner-800x600.jpg" alt=""></a>';
+
+}
+
+
+/*=====  End of ADD HELP TAB  ======*/
+	
+
+/*==============================================
+=            VIDEO METABOX ON POSTS            =
+==============================================*/
+
+function cyberize_video_metabox() {
+
+	add_meta_box( 'cyberize-video-1', 'CYBERIZE VIDEO', 'cyberize_video_metabox_callback', 'page', 'side', 'high' );
+
+}
+
+add_action( 'add_meta_boxes', 'cyberize_video_metabox' );
+
+//callback
+function cyberize_video_metabox_callback() {
+
+	echo '<iframe width="100%" height="315" src="https://www.youtube.com/embed/pUfGjWYpE-I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+}
+
+
+/*=====  End of VIDEO METABOX ON POSTS  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,15 @@ $imb-admin-primary: darken(#C6A589, 0%); //coffee orange
 $imb-admin-secondary: lighten(gray, 10%);
 $imb-admin-third: orangered;
 
+/*=========================================================
+=            REMOVING TOP SCREEN OPTIONS LINKS            =
+=========================================================*/
+
+#show-settings-link {
+	// display: none;
+}
+
+/*=====  End of REMOVING TOP SCREEN OPTIONS LINKS  ======*/
 
 /**
  *
