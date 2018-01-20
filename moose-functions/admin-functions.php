@@ -145,7 +145,10 @@ add_action( 'add_meta_boxes', 'cyberize_video_metabox' );
 //callback
 function cyberize_video_metabox_callback() {
 
-	echo '<iframe width="100%" height="315" src="https://www.youtube.com/embed/pUfGjWYpE-I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+	//echo '<iframe width="100%" height="315" src="https://www.youtube.com/embed/pUfGjWYpE-I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+	//echo '<iframe width="100%" height="315" src="https://www.youtube.com/embed/K988Q6VYG7I&list=PLbq8EEQ9L98HIqmxJhz1dtWF9IrbwrDEv" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+	// echo '<a href="https://www.youtube.com/watch?v=K988Q6VYG7I&list=PLbq8EEQ9L98HIqmxJhz1dtWF9IrbwrDEv" title="" target="_blank">Training Videos</a>';
+	echo '<iframe width="100%" height="315" src="https://www.youtube.com/embed/K988Q6VYG7I?list=PLbq8EEQ9L98HIqmxJhz1dtWF9IrbwrDEv" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
 }
 
 

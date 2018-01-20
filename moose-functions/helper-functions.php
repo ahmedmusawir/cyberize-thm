@@ -148,4 +148,18 @@ add_filter('rest_prepare_post', 'prepare_rest', 10, 3 );
 /*=====  End of PREPARE REST API  ======*/
 
 
+/*=============================================
+=            ACF OPTIONS PAGE CODE            =
+=============================================*/
 
+if( function_exists('acf_add_options_page') ) {
+ 
+  $option_page = acf_add_options_page(array(
+    'icon_url'  => 'dashicons-chart-line',
+    'menu_title'  => 'Analytics',
+    'menu_slug'   => 'analytics-default-settings',
+    // 'capability'   => 'edit_posts',
+    // 'redirect'   => false
+  ));
+ 
+}

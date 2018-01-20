@@ -18,9 +18,21 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!--============================================
-=            Google Analytics Code            =
-=============================================-->
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - HEAD     =
+============================================-->
+
+<?php if (get_field('before_ending_head_tag')) : ?>
+
+	<?php the_field('before_ending_head_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_ending_head_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
 
 <?php wp_head(); ?>
 </head>
@@ -61,6 +73,21 @@
 
 <body <?php body_class(); ?>>
 
+<!--======================================================
+=            CUSTOM ANALYTICS TAGS - BODY TOP            =
+=======================================================-->
+
+<?php if (get_field('after_top_body_tag')) : ?>
+
+	<?php the_field('after_top_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('after_top_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'moose-frame' ); ?></a>

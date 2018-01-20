@@ -100,6 +100,20 @@ wp_footer();
 	</div> <!-- End of id="content" class="site-content" -->
 </div> <!-- End of id="page" class="site" -->
 
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - FOOTER     =
+============================================-->
 
+<?php if (get_field('before_bottom_body_tag')) : ?>
+
+	<?php the_field('before_bottom_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_bottom_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
 </body>
 </html>
