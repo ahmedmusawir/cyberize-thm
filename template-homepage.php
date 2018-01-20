@@ -435,8 +435,6 @@ get_header('home'); ?>
                     
                     <article class="text-only">
                         <h1 class="headline"><?php the_field('video_footer_right_title'); ?></h1>
-                        <!-- <h1 class="headline">Yes! We kick ass and take names!!</h1> -->
-
                         <p>
                             <?php the_field('video_footer_right_text'); ?>
                         </p>

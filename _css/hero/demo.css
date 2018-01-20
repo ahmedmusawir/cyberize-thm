@@ -62,7 +62,11 @@ a {
 	color: #fbe094;
 	outline: none;
 }
-
+a:hover {
+	text-decoration: none;
+	color: white;
+	outline: none;
+}
 
 
 .hidden {

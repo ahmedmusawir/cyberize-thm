@@ -166,7 +166,7 @@ add_action( 'widgets_init', 'moose_frame_widgets_init' );
  * Enqueue scripts and styles.
  */
 function moose_frame_scripts() {
-	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri(), '', '4.0' );
+	wp_enqueue_style( 'moose-frame-style', get_stylesheet_uri(), '', '5.0' );
 
 	wp_enqueue_style( 'moose-masonry-style', get_template_directory_uri() . '/_masonry-css/style.css', '', '1.0' );
 	wp_enqueue_style( 'moose-masonry-media-query-style', get_template_directory_uri() . '/_masonry-css/media_query.css', '', '1.0' );

@@ -34,7 +34,7 @@
 			background-color: rgba( white, 1 );
 			opacity: 1;
 			margin-top: -250px;
-			z-index: 100;
+			z-index: 1000;
 			box-shadow: 3px 3px 15px gray;
 		
 			.text-content {
@@ -54,6 +54,15 @@
 					font-size: 2rem;
 					text-shadow: 4px 4px 8px white;
 					// border: 1rem dotted red;
+				}
+
+				a {
+					color: $imb-secondary;
+
+					&:hover {
+						color: $imb-third;
+						text-decoration: underline !important;
+					}
 				}
 		
 			}

@@ -23,11 +23,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#887e80', end
 
 
 	.content {
-		// background: url('/wp-content/uploads/2017/10/the-gray-blob-bg-600w.png');
 		min-height: 800px;
-		// background: url(/wp-content/uploads/2017/10/the-gray-blob-600w.png) no-repeat center center; 
 		background: url(/wp-content/uploads/2018/01/the-orangered-blob.png) no-repeat center center; 
-		// background: url(/wp-content/uploads/2018/01/the-gray-blob-600w-MATRIX.png) no-repeat center center; 
 		  -webkit-background-size: 100%;
 		  -moz-background-size: 100%;
 		  -o-background-size: 100%;
@@ -107,7 +104,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#887e80', end
 					font-size: 2rem;
 					line-height: 2rem;
 					text-shadow: 2px 2px 6px black;
-					min-height: 550px;
 				}
 			}
 
