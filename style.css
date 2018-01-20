@@ -6232,8 +6232,7 @@ img {
  *
  */
 #drasi-home-tilt-image-unit .content--c2 {
-  position: relative;
-  margin-top: -250px; }
+  margin-top: -200px; }
   @media (max-width: 460px) {
     #drasi-home-tilt-image-unit .content--c2 .tilter.tilter--2 {
       display: none; } }
