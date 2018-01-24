@@ -293,7 +293,7 @@ get_header('home'); ?>
         
         <h1 class="social-proof-title text-center visible-xs"><?php the_field('iphone_block_title'); ?></h1>
         <!-- <h1 class="social-proof-title text-center visible-xs">Our Focus</h1> -->
-        <img class="img-responsive center-block visible-xs" src="/wp-content/uploads/2017/10/iPhone.png" alt="">
+        <img class="img-responsive center-block visible-xs" src="<?php the_field('iphone_mobile_image'); ?>" alt="">
         
         <div id="ac-wrapper" class="ac-wrapper hidden-xs">
             <h2><?php the_field('iphone_block_title'); ?><span><?php the_field('iphone_block_subtitle'); ?></span></h2>
@@ -339,38 +339,55 @@ get_header('home'); ?>
 
     <div id="ri-grid" class="ri-grid ri-grid-size-2">
         <!-- <img class="ri-loading-image" src="images/loading.gif"/> -->
-        <ul>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-1.jpg"/></a></li>
+
+        <?php 
+
+        $images = get_field('technology_image_gallery');
+
+        // echo '<pre>';
+        // print_r($images);
+        // echo '</pre>';
+
+        if( $images ): ?>
+            <ul>
+                <?php foreach( $images as $image ): ?>
+                    <li>
+                        <a href="#">
+                             <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="" />
+                             <!-- <h1><?php echo $image['sizes']['thumbnail']; ?></h1> -->
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>
+        <!-- <ul>
+		            
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-1.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-1.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-11.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-10.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-17.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-11.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-10.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-2.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-16.jpg"/></a></li>
-            <!-- <li><a href="#"><img src="/wp-content/uploads/2017/10/img-6.jpg"/></a></li> -->
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-3.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-16.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-3.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-5.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-11.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-11.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-12.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-16.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-16.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-4.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-11.jpg"/></a></li>
-            <!-- <li><a href="#"><img src="/wp-content/uploads/2017/10/img-3.jpg"/></a></li> -->
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-15.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-11.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-7.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-8.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-8.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-8.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-10.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-10.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-3.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-5.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-5.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-9.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-4.jpg"/></a></li>
-            <!-- <li><a href="#"><img src="/wp-content/uploads/2017/10/img-3.jpg"/></a></li> -->
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-4.jpg"/></a></li>
             <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-10.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2017/10/img-2.jpg"/></a></li>
-            <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-11.jpg"/></a></li>
-            
-        </ul>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/img-2.jpg"/></a></li>
+            <li><a href="#"><img src="/wp-content/uploads/2018/01/logo-11.jpg"/></a></li>          
+                    
+        </ul> -->
     </div>
     <p class="codrops-info"><strong>Demo 2:</strong> "fadeInOut" animation / 100% container width / 1 image switch at a time / 600ms between switching</p>
 </section>

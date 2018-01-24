@@ -104,15 +104,9 @@ wp_footer();
 =            CUSTOM ANALYTICS TAGS - FOOTER     =
 ============================================-->
 
-<?php if (get_field('before_bottom_body_tag')) : ?>
-
-	<?php the_field('before_bottom_body_tag'); ?>
-
-<?php else : ?>
-
 	<?php the_field('before_bottom_body_tag_default', 'option'); ?>
 
-<?php endif; ?>	
+	<?php the_field('before_bottom_body_tag'); ?>
 
 <!--====  End of CUSTOM ANALYTICS TAGS  ====-->
 </body>
