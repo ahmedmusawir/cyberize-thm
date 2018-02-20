@@ -19,58 +19,40 @@ wp_footer();
 					<aside id="text-1" class="widget-footer-container widget_text">
 
 						<?php 
-							// if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
-							// 	return;
-							// }
+							if ( ! is_active_sidebar( 'footer-sidebar-1' ) ) {
+								echo "Please Insert a Widget!";
+							}
 
-							// dynamic_sidebar( 'footer-sidebar-1' ); 
+							dynamic_sidebar( 'footer-sidebar-1' ); 
 
 						?>
 
-				
-						    <div class="footer-social">
-						        <ul class="social-links-holder">
-						            <a href="https://www.facebook.com/" title="Facebook" class="social-links">
-						            	<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-						            </a>
-						            <a href="https://twitter.com/" title="Twitter" class="social-links">
-						            	<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-						            </a>
-						            <a href="https://plus.google.com/" title="Google Plus" class="social-links">
-						            	<i class="fa fa-google-plus fa-2x" aria-hidden="true"></i>
-						            </a>
-						        </ul>
-						    </div>
+						<?php 
+							if ( ! is_active_sidebar( 'footer-sidebar-2' ) ) {
+								echo "Please Insert a Widget!";
+							}
 
-						    <div class="footer-links">
-						        <a class="footer-link" href="/terms/">
-						        Terms
-						      </a>
-						        <span class="footer-divider">|</span> <a class="footer-link" href="/privacy/">
-						        Privacy
-						      </a>
-						    </div>
+							dynamic_sidebar( 'footer-sidebar-2' ); 
 
-						    <div class="footer-promotion">
-						        For business inquiries
-						        <svg width="21px" height="14px" viewBox="0 0 21 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						            <defs></defs>
-						            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						                <g id="arrow-black" transform="translate(1.000000, 1.000000)" stroke="#EE5050" stroke-width="2">
-						                    <g id="Group-Copy" transform="translate(9.000000, 6.000000) rotate(-270.000000) translate(-9.000000, -6.000000) translate(3.000000, -3.000000)">
-						                        <path d="M6,17.5 L6,0.470613634" id="Line" stroke-linecap="square"></path>
-						                        <polyline id="Path-5" points="0 5.84863281 5.81835937 0 11.5664252 5.74806587"></polyline>
-						                    </g>
-						                </g>
-						            </g>
-						        </svg> <a href="mailto:support@drasimedia.com">
-						        support@cyberizegroup.com
-						      </a>
-						    </div>
+						?>
 
-						    <div id="copyright">
-						        Copyright © 2018 Cyberize Group, LLC. All Rights Reserved.
-						    </div>
+						<?php 
+							if ( ! is_active_sidebar( 'footer-sidebar-3' ) ) {
+								echo "Please Insert a Widget!";
+							}
+
+							dynamic_sidebar( 'footer-sidebar-3' ); 
+
+						?>
+
+						<?php 
+							if ( ! is_active_sidebar( 'page-bottom' ) ) {
+								echo "Please Insert a Widget!";
+							}
+
+							dynamic_sidebar( 'page-bottom' ); 
+
+						?>
 
 				   	</aside>
 
