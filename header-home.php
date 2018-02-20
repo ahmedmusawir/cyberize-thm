@@ -86,7 +86,7 @@
 
             </div>
 
-            <div class="modal-body">
+            <div class="modal-body" style="background: #2e241b; height: 500px;">
 
                 <section id="popup-form-click" class="clearfix">
 
@@ -182,7 +182,8 @@
            
                <h1 class="headline text-center"><?php the_field('hero_sub_headline_text'); ?></h1>
                <h2 class="btn-holder text-center">
-                   <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal-hero"><?php the_field('hero_button_text'); ?></a>
+                   <a class="btn btn-primary btn-lg" href="<?php the_field('hero_button_link'); ?>"><?php the_field('hero_button_text'); ?></a>
+                   <a class="btn btn-primary btn-lg" href="<?php the_field('hero_button_2_link'); ?>"><?php the_field('hero_button_2_text'); ?></a>
                </h2>
 
            </div>

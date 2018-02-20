@@ -16,7 +16,6 @@
 			}
 		}
 
-
 		#TOP-HERO-INFO-BOX {
 			position: absolute;
 			z-index: 100;
@@ -42,6 +41,8 @@
 				}
 			}
 			.btn-holder {
+				// border: 3px solid red;
+				margin-bottom: 5rem;
 				@media (max-width: 450px) {
 					padding-top: 0;
 				}
@@ -49,6 +50,7 @@
 			.btn {
 				padding: 1.5rem 6rem;
 				border-radius: 50px;
+				margin-bottom: 1rem;
 
 				@media (max-width: 450px) {
 					padding: .5rem 5rem;

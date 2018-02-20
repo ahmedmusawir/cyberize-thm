@@ -64,7 +64,7 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 
 					$args = array(
 						'post_type' => 'portfolio',
-						'posts_per_page' => 100,
+						'posts_per_page' => 35,
 						'paged' => $paged,
 					);	
 					
@@ -250,7 +250,7 @@ query_posts( '&post_type=portfolio&paged=' . $paged );
 
 						<div class="paging-first-page"><?php next_posts_link(); ?></div>
 
-				<?php elseif( $counter < 100 ) : ?>
+				<?php elseif( $counter < 35 ) : ?>
 
 					<div class="paging-text"><aside class="pull-right"><?php previous_posts_link(); ?></aside></div>
 				
