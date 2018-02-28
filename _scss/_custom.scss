@@ -14,9 +14,7 @@ $imb-red: #bb324a;
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-// @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
-// @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
-// @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 /*==================================================
 =            MOBILE WHITE SPACE REMOVAL            =
@@ -49,7 +47,6 @@ html {
 
 body {
 
-	// font-family: 'Roboto', sans-serif;
 	font-family: 'Quicksand', serif;
 	p {
 		font-size: 2rem;
@@ -69,7 +66,8 @@ body {
 		color: $imb-secondary;
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-		font-family: 'Quicksand', sans-serif;
+		// font-family: 'Quicksand', sans-serif;
+		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 
 
@@ -431,6 +429,15 @@ img {
  *
  */
 @import "PARTIALS/_imb-archive-page";
+
+/**
+ *
+ * PORTFOLIO RELATED
+ *
+ */
+@import "PARTIALS/_cg-taxonomy-portfolio-item";
+@import "PARTIALS/_cg-portfolio-main-page";
+
 
 
 //**** Post footer icons

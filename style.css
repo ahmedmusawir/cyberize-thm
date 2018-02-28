@@ -19,6 +19,7 @@ If you want to add your own css code, please do it in /css/custom.css
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5935,7 +5936,7 @@ body {
     color: #ef4409;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700; }
   body a {
     text-decoration: none !important; }
@@ -6021,31 +6022,38 @@ img {
       color: #bbbbbb; }
       .navbar .dropdown-menu li a:hover {
         background-color: #4d4d4d; }
-  @media (min-width: 992px) {
-    .navbar #menu-main-menu {
-      margin-top: 1.5rem;
-      margin-bottom: -2rem; } }
-  .navbar #menu-main-menu .buy-btn {
-    padding-top: 0rem;
-    padding-bottom: 0rem; }
-    .navbar #menu-main-menu .buy-btn a {
-      color: white !important; }
-  .navbar #menu-main-menu li:hover {
-    background-color: transparent; }
-  .navbar #menu-main-menu li a {
-    color: #f6531b;
-    font-size: 1.5rem;
-    font-weight: 600; }
-    .navbar #menu-main-menu li a:hover {
-      color: #fbb096; }
-    @media (min-width: 1200px) {
-      .navbar #menu-main-menu li a {
-        font-size: 1.5rem;
-        font-weight: 500; } }
-  .navbar #menu-main-menu .current-menu-item a {
-    color: white;
-    border: 1px solid #ef4409;
-    background-color: transparent; }
+  .navbar #menu-main-menu {
+    margin-right: 1rem; }
+    @media (min-width: 992px) {
+      .navbar #menu-main-menu {
+        margin-top: 1.5rem;
+        margin-bottom: -2rem; } }
+    .navbar #menu-main-menu .quote-btn {
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      background-color: #ef4409;
+      border-top-left-radius: 20%;
+      border-bottom-right-radius: 20%; }
+      .navbar #menu-main-menu .quote-btn:hover {
+        background-color: #be3607; }
+      .navbar #menu-main-menu .quote-btn a {
+        color: white !important; }
+    .navbar #menu-main-menu li:hover {
+      background-color: transparent; }
+    .navbar #menu-main-menu li a {
+      color: #f6531b;
+      font-size: 1.5rem;
+      font-weight: 600; }
+      .navbar #menu-main-menu li a:hover {
+        color: #fbb096; }
+      @media (min-width: 1200px) {
+        .navbar #menu-main-menu li a {
+          font-size: 1.5rem;
+          font-weight: 500; } }
+    .navbar #menu-main-menu .current-menu-item a {
+      color: white;
+      border: 1px solid #ef4409;
+      background-color: transparent; }
 
 /*==========================================
 =            General Page Stuff            =
@@ -6914,6 +6922,112 @@ img {
           text-align: center; }
         #heather-archive-indx #masonry-grid .article-content-block .article-title {
           text-align: center; } }
+
+/**
+ *
+ * PORTFOLIO RELATED
+ *
+ */
+/**
+ *
+ * Taxonomy Product Type Styles
+ *
+ */
+.tax-portfolio-item .page-header {
+  border-bottom: none;
+  margin: 0;
+  margin-top: 0rem;
+  margin-bottom: 4rem; }
+.tax-portfolio-item #col-md-moose {
+  background-color: #e3e3e3; }
+.tax-portfolio-item .portfolio-nav {
+  margin-bottom: 2rem; }
+  .tax-portfolio-item .portfolio-nav #menu-portfolio-categories {
+    list-style-type: none; }
+    .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li {
+      display: inline-block;
+      border: 1px solid white;
+      padding: 1rem 2rem;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 2px 2px 6px gray; }
+      .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li a {
+        font-variant: small-caps;
+        font-weight: 700; }
+      .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li:hover {
+        background-color: tomato; }
+        .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li:hover a {
+          color: white; }
+      .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li.current-menu-item {
+        background-color: tomato; }
+        .tax-portfolio-item .portfolio-nav #menu-portfolio-categories li.current-menu-item a {
+          color: white; }
+.tax-portfolio-item .article-content-block .content-block {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .tax-portfolio-item .article-content-block .content-block:hover {
+    box-shadow: 19px 19px 20px gray !important; }
+.tax-portfolio-item .article-content-block .article-image img {
+  padding-left: 1.5rem !important;
+  padding-top: 1rem !important; }
+
+/**
+ *
+ * Taxonomy Product Type Styles
+ *
+ */
+#portfolio-main-page .portfolio-nav {
+  margin-bottom: 2rem;
+  margin-top: 5rem; }
+  #portfolio-main-page .portfolio-nav #menu-portfolio-categories {
+    list-style-type: none; }
+    #portfolio-main-page .portfolio-nav #menu-portfolio-categories li {
+      display: inline-block;
+      border: 1px solid white;
+      padding: 1rem 2rem;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 2px 2px 6px gray; }
+      #portfolio-main-page .portfolio-nav #menu-portfolio-categories li a {
+        font-variant: small-caps;
+        font-weight: 700; }
+      #portfolio-main-page .portfolio-nav #menu-portfolio-categories li:hover {
+        background-color: tomato; }
+        #portfolio-main-page .portfolio-nav #menu-portfolio-categories li:hover a {
+          color: white; }
+      #portfolio-main-page .portfolio-nav #menu-portfolio-categories li.current-menu-item {
+        background-color: tomato; }
+        #portfolio-main-page .portfolio-nav #menu-portfolio-categories li.current-menu-item a {
+          color: white; }
+#portfolio-main-page .featured-content-block {
+  background-color: #e3e3e3;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem; }
+  #portfolio-main-page .featured-content-block .title {
+    padding-top: 4rem;
+    text-shadow: 2px 2px 2px gray; }
+  #portfolio-main-page .featured-content-block .featured-item {
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    #portfolio-main-page .featured-content-block .featured-item:hover {
+      box-shadow: 9px 9px 20px gray !important; }
+    #portfolio-main-page .featured-content-block .featured-item .btn-holder {
+      padding-top: 2rem; }
+      #portfolio-main-page .featured-content-block .featured-item .btn-holder .btn {
+        border: 3px solid white;
+        padding: .5rem 3rem;
+        font-size: 1.8rem;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        color: white; }
 
 .cat-links:before {
   font-family: "FontAwesome";

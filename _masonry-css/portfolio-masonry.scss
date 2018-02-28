@@ -64,6 +64,16 @@ $black       : #000000;
 				font-style: italic;
 				font-weight: 300;
 			}
+			.btn-holder {
+				.btn {
+					background-color: $imb-third;
+					border-radius: 50px;
+
+					&:hover {
+						background-color: black;
+					}
+				}
+			}
 		}
 
 		main {

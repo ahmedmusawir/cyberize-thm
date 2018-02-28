@@ -71,7 +71,7 @@
 				<?php if( get_field( 'page_header_image') ) : ?>
 
 				 background-image: url("<?php the_field( 'page_header_image' ); ?>");  
-				 /* background-image: url("<?php the_field( 'blog_index_header_image', get_option('page_for_posts') ); ?>");   */
+				 
 				<?php else : ?>	
 	
 				 background-image: url("<?php the_field( 'page_header_image', 643 ); ?>");  
@@ -121,7 +121,7 @@
 			<!-- <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> -->
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	
-	  		  <div class="container">
+	  		  <div class="container-fluid">
 
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-header">
